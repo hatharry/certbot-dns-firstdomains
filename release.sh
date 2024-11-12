@@ -27,6 +27,6 @@ git push --tags
 rm -rf dist src/*.egg-info
 pip3 install --upgrade build twine
 python3 -m build
-python3 -m twine upload --repository certbot-dns-active24 dist/*
+python3 -m twine upload --repository certbot-dns-firstdomains dist/*
 
 echo "Published version $( git describe --exact-match --tags )."

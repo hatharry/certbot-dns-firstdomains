@@ -15,8 +15,8 @@ class Authenticator(DNSAuthenticator):
         self.session = Session()
 
     @classmethod
-    def add_parser_arguments(cls, add):
-        super().add_parser_arguments(add, default_propagation_seconds=300)
+    def add_parser_arguments(cls, add, default_propagation_seconds=300):
+        super().add_parser_arguments(add, default_propagation_seconds)
         add(
             "credentials",
             help="First Domains credentials INI file.",
